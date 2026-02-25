@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match的个人博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Match's Blog</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> 联系</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>欢迎来到我的<span class="highlight">数字空间</span></h1>
+                <p class="subtitle">这里记录着我的思考、学习和创作</p>
+                <div class="hero-buttons">
+                    <a href="blog.html" class="btn btn-primary">阅读博客</a>
+                    <a href="#featured" class="btn btn-secondary">精选文章</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-snippet">
+                    <pre><code>// 欢迎来到我的世界
+function welcome() {
+    console.log("Hello, World!");
+    return "探索、学习、创造";
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 精选文章 -->
+    <section class="featured-posts" id="featured">
+        <div class="container">
+            <h2 class="section-title">精选文章</h2>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-date">2026-02-25</div>
+                    <h3><a href="posts/ai-papers-2020.html">2020年后经典AI论文推荐</a></h3>
+                    <p>精选10篇2020年后的经典人工智能论文，包括GPT-3、Vision Transformer等...</p>
+                    <div class="post-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">论文</span>
+                        <span class="tag">机器学习</span>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-date">2026-02-25</div>
+                    <h3><a href="posts/cs2-automation.html">CS2自动化脚本开发心得</a></h3>
+                    <p>使用AutoHotkey和Python开发游戏自动化脚本的技术分享和注意事项...</p>
+                    <div class="post-tags">
+                        <span class="tag">游戏</span>
+                        <span class="tag">自动化</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </article>
+                
+                <article class="post-card">
+                    <div class="post-date">2026-02-24</div>
+                    <h3><a href="posts/latex-report.html">LaTeX实验报告美化技巧</a></h3>
+                    <p>如何将普通的LaTeX文档转化为专业美观的学术报告...</p>
+                    <div class="post-tags">
+                        <span class="tag">LaTeX</span>
+                        <span class="tag">学术</span>
+                        <span class="tag">排版</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>关于我</h2>
+                    <p>我是Match，一名对技术充满热情的学习者。我喜欢探索新知识，解决问题，并将想法转化为现实。</p>
+                    <p>这个博客记录了我的学习历程、项目经验和思考感悟。</p>
+                    <a href="about.html" class="btn btn-outline">了解更多</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">博客文章</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">技术项目</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">编程语言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Match's Blog</h3>
+                    <p>记录思考，分享知识，创造价值</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="contact.html">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Match's Blog. 保留所有权利。</p>
+                <p>最后更新: 2026年2月25日</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - Match的个人博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Match's Blog</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="about.html" class="active"><i class="fas fa-user"></i> 关于</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> 联系</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 关于页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>关于我</h1>
+            <p class="page-subtitle">探索、学习、创造</p>
+        </div>
+    </header>
+
+    <!-- 关于内容 -->
+    <main class="about-page">
+        <div class="container">
+            <!-- 个人简介 -->
+            <section class="about-section">
+                <div class="about-profile">
+                    <div class="profile-image">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h2>Match</h2>
+                        <p class="profile-title">技术爱好者 & 终身学习者</p>
+                        <p class="profile-location"><i class="fas fa-map-marker-alt"></i> 中国</p>
+                        
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">年经验</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">25+</div>
+                                <div class="stat-label">博客文章</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">项目</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-bio">
+                    <h3>个人简介</h3>
+                    <p>你好！我是Match，一名对技术充满热情的学习者。我相信技术的力量可以改变世界，而学习是通往未来的钥匙。</p>
+                    <p>我的兴趣广泛，从人工智能到游戏开发，从Web技术到学术写作。我喜欢探索新知识，解决问题，并将想法转化为现实。</p>
+                    <p>这个博客记录了我的学习历程、项目经验和思考感悟。我希望通过分享，不仅能够帮助自己梳理知识，也能够为他人提供一些参考和启发。</p>
+                </div>
+            </section>
+
+            <!-- 技能专长 -->
+            <section class="skills-section">
+                <h2 class="section-title">技能专长</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> 编程语言</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">C#</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 70%"></div>
+                                </div>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> 技术栈</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">LaTeX</span>
+                            <span class="skill-tag">AutoHotkey</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-language"></i> 语言能力</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">中文 (母语)</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 100%"></div>
+                                </div>
+                                <span class="skill-percent">100%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">英语</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 学习历程 -->
+            <section class="timeline-section">
+                <h2 class="section-title">学习历程</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - 至今</div>
+                        <div class="timeline-content">
+                            <h3>自主学习阶段</h3>
+                            <p>专注于Web开发、人工智能和游戏开发领域的学习和实践。通过项目驱动的方式，不断提升技术能力和解决问题的能力。</p>
+                            <ul>
+                                <li>完成多个Web全栈项目</li>
+                                <li>学习机器学习算法和深度学习框架</li>
+                                <li>探索游戏开发技术和自动化脚本</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <div class="timeline-content">
+                            <h3>技术基础建设</h3>
+                            <p>系统学习计算机科学基础知识，包括数据结构、算法、操作系统、网络等。同时开始接触实际项目开发。</p>
+                            <ul>
+                                <li>掌握Python和JavaScript编程</li>
+                                <li>学习数据库设计和优化</li>
+                                <li>参与开源项目贡献</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-content">
+                            <h3>兴趣探索期</h3>
+                            <p>开始接触编程，从简单的脚本和网页开始，逐渐培养对技术的兴趣。尝试不同的技术方向，找到自己的兴趣点。</p>
+                            <ul>
+                                <li>学习HTML/CSS基础</li>
+                                <li>尝试Python自动化脚本</li>
+                                <li>建立第一个个人博客</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 兴趣爱好 -->
+            <section class="interests-section">
+                <h2 class="section-title">兴趣爱好</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>游戏</h3>
+                        <p>喜欢策略类和竞技类游戏，对游戏机制和设计有浓厚兴趣。</p>
+                    </div>
+
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>电影</h3>
+                        <p>热爱电影艺术，特别是科幻和剧情片，喜欢分析电影叙事和视觉语言。</p>
+                    </div>
+
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>阅读</h3>
+                        <p>广泛阅读技术、科幻和哲学类书籍，保持学习和思考的习惯。</p>
+                    </div>
+
+                    <div class="interest-card">
+                        <div class="interest-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>音乐</h3>
+                        <p>欣赏各种类型的音乐，从古典到电子，音乐是灵感的源泉。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 价值观 -->
+            <section class="values-section">
+                <h2 class="section-title">价值观</h2>
+                <div class="values-content">
+                    <div class="value-item">
+                        <h3><i class="fas fa-lightbulb"></i> 持续学习</h3>
+                        <p>技术日新月异，保持学习是应对变化的最好方式。我相信终身学习的力量。</p>
+                    </div>
+                    <div class="value-item">
+                        <h3><i class="fas fa-hands-helping"></i> 分享精神</h3>
+                        <p>知识在分享中增值。通过博客和开源项目，我希望能够帮助他人，同时提升自己。</p>
+                    </div>
+                    <div class="value-item">
+                        <h3><i class="fas fa-cogs"></i> 解决问题</h3>
+                        <p>技术是解决问题的工具。我享受分析问题、设计解决方案并实现的过程。</p>
+                    </div>
+                    <div class="value-item">
+                        <h3><i class="fas fa-balance-scale"></i> 平衡发展</h3>
+                        <p>在追求技术进步的同时，也注重人文素养和身心健康的发展。</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Match's Blog</h3>
+                    <p>记录思考，分享知识，创造价值</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="contact.html">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Match's Blog. 保留所有权利。</p>
+                <p>最后更新: 2026年2月25日</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

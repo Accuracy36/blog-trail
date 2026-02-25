@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客文章 - Match的个人博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Match's Blog</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> 联系</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 博客页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>博客文章</h1>
+            <p class="page-subtitle">记录我的学习、思考和项目经验</p>
+            <div class="search-box">
+                <input type="text" placeholder="搜索文章..." id="searchInput">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 博客内容 -->
+    <main class="blog-page">
+        <div class="container">
+            <div class="blog-content">
+                <!-- 文章列表 -->
+                <div class="articles-list">
+                    <!-- 文章1 -->
+                    <article class="blog-article">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> 2026-02-25</span>
+                            <span class="article-category"><i class="far fa-folder"></i> AI/机器学习</span>
+                            <span class="article-read-time"><i class="far fa-clock"></i> 8分钟阅读</span>
+                        </div>
+                        <h2><a href="posts/ai-papers-2020.html">2020年后经典AI论文推荐与解读</a></h2>
+                        <p class="article-excerpt">在人工智能快速发展的今天，2020年后的论文代表了该领域的最新进展。本文精选了10篇具有里程碑意义的论文，包括GPT-3、Vision Transformer、DALL-E等，并对每篇论文的核心思想、技术贡献和应用前景进行了深入解读...</p>
+                        <div class="article-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">论文</span>
+                            <span class="tag">机器学习</span>
+                            <span class="tag">深度学习</span>
+                        </div>
+                        <a href="posts/ai-papers-2020.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <!-- 文章2 -->
+                    <article class="blog-article">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> 2026-02-25</span>
+                            <span class="article-category"><i class="far fa-folder"></i> 游戏开发</span>
+                            <span class="article-read-time"><i class="far fa-clock"></i> 12分钟阅读</span>
+                        </div>
+                        <h2><a href="posts/cs2-automation.html">CS2自动化脚本开发：从原理到实践</a></h2>
+                        <p class="article-excerpt">本文详细介绍了如何使用AutoHotkey和Python开发Counter-Strike 2的自动化脚本。从游戏自动化原理、技术实现到安全注意事项，全面解析了游戏自动化开发的全过程。同时探讨了自动化脚本的合法使用边界和道德考量...</p>
+                        <div class="article-tags">
+                            <span class="tag">游戏</span>
+                            <span class="tag">自动化</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">AutoHotkey</span>
+                        </div>
+                        <a href="posts/cs2-automation.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <!-- 文章3 -->
+                    <article class="blog-article">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> 2026-02-24</span>
+                            <span class="article-category"><i class="far fa-folder"></i> 学术写作</span>
+                            <span class="article-read-time"><i class="far fa-clock"></i> 10分钟阅读</span>
+                        </div>
+                        <h2><a href="posts/latex-report.html">LaTeX实验报告美化：从普通到专业的转变</a></h2>
+                        <p class="article-excerpt">LaTeX是学术写作的黄金标准，但默认模板往往显得单调。本文分享如何通过自定义样式、添加专业元素和优化排版，将普通的实验报告转化为美观专业的文档。包含具体代码示例和实用技巧...</p>
+                        <div class="article-tags">
+                            <span class="tag">LaTeX</span>
+                            <span class="tag">学术</span>
+                            <span class="tag">排版</span>
+                            <span class="tag">文档</span>
+                        </div>
+                        <a href="posts/latex-report.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <!-- 文章4 -->
+                    <article class="blog-article">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> 2026-02-23</span>
+                            <span class="article-category"><i class="far fa-folder"></i> Web开发</span>
+                            <span class="article-read-time"><i class="far fa-clock"></i> 15分钟阅读</span>
+                        </div>
+                        <h2><a href="posts/static-site-generator.html">从零开始构建静态网站生成器</a></h2>
+                        <p class="article-excerpt">静态网站生成器是现代Web开发的重要工具。本文记录了我从零开始构建一个简单静态网站生成器的过程，包括模板引擎设计、Markdown解析、文件系统操作等核心功能的实现...</p>
+                        <div class="article-tags">
+                            <span class="tag">Web开发</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">工具</span>
+                        </div>
+                        <a href="posts/static-site-generator.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <!-- 文章5 -->
+                    <article class="blog-article">
+                        <div class="article-meta">
+                            <span class="article-date"><i class="far fa-calendar"></i> 2026-02-22</span>
+                            <span class="article-category"><i class="far fa-folder"></i> 学习心得</span>
+                            <span class="article-read-time"><i class="far fa-clock"></i> 6分钟阅读</span>
+                        </div>
+                        <h2><a href="posts/learning-methods.html">高效学习编程的方法论</a></h2>
+                        <p class="article-excerpt">经过多年的编程学习，我总结了一套高效的学习方法。本文分享如何建立知识体系、选择学习资源、实践项目和持续进步的经验，帮助初学者更快地掌握编程技能...</p>
+                        <div class="article-tags">
+                            <span class="tag">学习</span>
+                            <span class="tag">编程</span>
+                            <span class="tag">方法论</span>
+                            <span class="tag">成长</span>
+                        </div>
+                        <a href="posts/learning-methods.html" class="read-more">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+
+                <!-- 侧边栏 -->
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>分类</h3>
+                        <ul class="categories-list">
+                            <li><a href="#"><i class="fas fa-code"></i> 编程技术 <span class="count">12</span></a></li>
+                            <li><a href="#"><i class="fas fa-brain"></i> AI/机器学习 <span class="count">8</span></a></li>
+                            <li><a href="#"><i class="fas fa-gamepad"></i> 游戏开发 <span class="count">5</span></a></li>
+                            <li><a href="#"><i class="fas fa-book"></i> 学术写作 <span class="count">7</span></a></li>
+                            <li><a href="#"><i class="fas fa-lightbulb"></i> 学习心得 <span class="count">10</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>热门标签</h3>
+                        <div class="tags-cloud">
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Web开发</span>
+                            <span class="tag">LaTeX</span>
+                            <span class="tag">游戏</span>
+                            <span class="tag">学习</span>
+                            <span class="tag">工具</span>
+                            <span class="tag">算法</span>
+                            <span class="tag">项目</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>最新文章</h3>
+                        <ul class="recent-posts">
+                            <li><a href="posts/ai-papers-2020.html">2020年后经典AI论文推荐</a></li>
+                            <li><a href="posts/cs2-automation.html">CS2自动化脚本开发</a></li>
+                            <li><a href="posts/latex-report.html">LaTeX实验报告美化</a></li>
+                            <li><a href="posts/static-site-generator.html">静态网站生成器</a></li>
+                            <li><a href="posts/learning-methods.html">高效学习编程</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3>订阅更新</h3>
+                        <p>订阅我的博客，获取最新文章通知</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="输入你的邮箱" required>
+                            <button type="submit" class="btn btn-primary">订阅</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- 分页 -->
+            <div class="pagination">
+                <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i> 上一页</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-link">5</a>
+                <a href="#" class="page-link">下一页 <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Match's Blog</h3>
+                    <p>记录思考，分享知识，创造价值</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="contact.html">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Match's Blog. 保留所有权利。</p>
+                <p>最后更新: 2026年2月25日</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

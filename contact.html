@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - Match的个人博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Match's Blog</a>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> 博客</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> 关于</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> 联系</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 联系页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>联系我</h1>
+            <p class="page-subtitle">期待与你交流</p>
+        </div>
+    </header>
+
+    <!-- 联系内容 -->
+    <main class="contact-page">
+        <div class="container">
+            <div class="contact-content">
+                <!-- 联系表单 -->
+                <div class="contact-form-section">
+                    <h2>发送消息</h2>
+                    <p class="form-description">有任何问题、建议或合作意向？请随时联系我。</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="请输入你的姓名">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">邮箱 *</label>
+                            <input type="email" id="email" name="email" required placeholder="请输入你的邮箱地址">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <select id="subject" name="subject">
+                                <option value="">请选择主题</option>
+                                <option value="general">一般咨询</option>
+                                <option value="collaboration">合作意向</option>
+                                <option value="feedback">反馈建议</option>
+                                <option value="technical">技术问题</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">消息内容 *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="请输入你的消息内容..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">同时订阅我的博客更新</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">发送消息</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> 发送中...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- 联系信息 -->
+                <div class="contact-info-section">
+                    <h2>联系信息</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>邮箱</h3>
+                                <p>match@example.com</p>
+                                <small>通常在24小时内回复</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>社交媒体</h3>
+                                <div class="social-contact">
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i> Twitter
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-linkedin"></i> LinkedIn
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-weibo"></i> 微博
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>响应时间</h3>
+                                <p>工作日：24小时内</p>
+                                <p>周末：48小时内</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 常见问题 -->
+                    <div class="faq-section">
+                        <h3>常见问题</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    你通常回复什么类型的问题？
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>我乐于回答关于技术、学习、项目合作等方面的问题。具体包括：编程问题、技术选型建议、学习路径规划、开源项目合作等。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    可以请求技术帮助吗？
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>当然可以！我很乐意提供技术建议和指导。请尽量详细描述你的问题，包括：技术栈、遇到的问题、已经尝试的解决方案等。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    如何合作？
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>我开放各种形式的合作，包括：技术咨询、项目开发、内容创作、开源贡献等。请通过邮件详细说明合作意向。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 联系提示 -->
+                    <div class="contact-tips">
+                        <h3>联系提示</h3>
+                        <ul>
+                            <li>请尽量详细描述你的问题或需求</li>
+                            <li>如果是技术问题，请提供相关代码或错误信息</li>
+                            <li>对于合作意向，请说明具体需求和期望</li>
+                            <li>我会认真阅读每一封邮件并尽快回复</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Match's Blog</h3>
+                    <p>记录思考，分享知识，创造价值</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="contact.html">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Match's Blog. 保留所有权利。</p>
+                <p>最后更新: 2026年2月25日</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
